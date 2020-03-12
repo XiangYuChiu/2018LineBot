@@ -40,6 +40,7 @@ def callback():
 def handle_message(event):
     get = event.message.text
 #event.gessage.text接收使用者文字訊息
+    mssage = TextSendMessage(text = '怕.jpg')
 
 #############################################
 
