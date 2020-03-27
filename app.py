@@ -33,8 +33,8 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if (event.message.text = '123'):
-        message == ('234')
+    if (event.message.text == '123'):
+        message = ('234')
     replymessage = TextSendMessage(text=message)
     line_bot_api.reply_message(event.reply_token, replymessage)
 
