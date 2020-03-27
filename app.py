@@ -38,20 +38,10 @@ def handle_message(event):
     message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
     #line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
     
-    if(wven.message.text == '2'):
-        message = ImagemapSendMessage(
-        base_url='https://example.com/base',
-        alt_text='this is an imagemap',
-        base_size=BaseSize(height=1040, width=1040),
-        actions=[
-            URIImagemapAction(
-                link_uri='https://example.com/',
-            )
-                area=ImagemapArea(x=0, y=0, width=520, height=1040)
-            MessageImagemapAction(
-                text='hello',
-                area=ImagemapArea(x=520, y=0, width=520, height=1040)
-            )
+    if (event.message.text == '234'):   #獲取測試訊息
+        replymessage = ('456')               #設定回復訊息(replymessage)
+    message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(messag
+
     line_bot_api.reply_message(event.reply_token, message)
 #######################################################################
 if __name__ == "__main__":
