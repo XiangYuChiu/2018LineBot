@@ -38,7 +38,7 @@ def handle_message(event):
     message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
     #line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
     
-    else if (event.message.text == '234'):   #獲取測試訊息
+    elif (event.message.text == '234'):   #獲取測試訊息
         replymessage = ('456')               #設定回復訊息(replymessage)
     message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(messag
 
