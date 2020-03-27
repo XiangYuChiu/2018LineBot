@@ -35,12 +35,10 @@ def callback():
 def handle_message(event):
     if (event.message.text == '123'):   #獲取測試訊息
         replymessage = ('234')               #設定回復訊息(replymessage)
-    message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
-    #line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
-    
     elif (event.message.text == '234'):   #獲取測試訊息
         replymessage = ('456')               #設定回復訊息(replymessage)
-    message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(messag
+    message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
+    #line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
 
     line_bot_api.reply_message(event.reply_token, message)
 #######################################################################
