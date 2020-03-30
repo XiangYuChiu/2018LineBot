@@ -67,6 +67,28 @@ def handle_message(event):
     
     message = TextSendMessage(text=replymessage)              #將回復訊息(replymessage)輸入LINE BOT(message)
     line_bot_api.reply_message(event.reply_token,message)     #LINE BOT回復訊息
+    
+def confirm_template_SendMessage_send_message(event):
+    # 這是一個傳送確認的模板，架構解說
+    confirm_template_message = TemplateSendMessage(
+        alt_text = '我是一個確認模板',  # 當你發送到你的Line bot 群組的時候，通知的名稱
+        template = ConfirmTemplate(
+            text = '你確定要買晚餐嗎?',  # 你要問的問題，或是文字敘述
+            # action 最多只能兩個喔！
+            actions = [
+                PostbackAction(
+                    label = '確認',  # 顯示名稱
+                    display_text = '那還不快去買！？',  # 點擊後，回傳的文字
+                    data = 'action=buy&itemid=1'  # 取得資料！？
+                ),
+                MessageAction(
+                    label = '不買',  # 顯示名稱
+                    text = '那就不買吧！'  # 點擊後，回傳的文字
+                )
+            ]
+        )
+    )
+    line_bot_api.push_message(event, confirm_template_message)
 #######################################################################
 if __name__ == "__main__":
     app.run()
