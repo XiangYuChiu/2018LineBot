@@ -42,6 +42,9 @@ def handle_message(event):
         #replymessage = ('各場地資料彙整\n場地地圖 https://goo.gl/dV8xwq\n各場地資料彙整如下\n\n')
         message = TextSendMessage(text='各場地資料彙整\n場地地圖 https://goo.gl/dV8xwq\n各場地資料彙整如下\n\n')               #將回復訊息(replymessage)輸入LINE BOT(message)
         line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
+        #replymessage = ('山湖戰術中心\n官網:  https://www.facebook.com/hillfoxtacticsCenter/\n導航直接搜尋 山狐戰術中心\n收費場 半天200/人 全天300/人')
+        message = TextSendMessage(text='山湖戰術中心\n官網:  https://www.facebook.com/hillfoxtacticsCenter/\n導航直接搜尋 山狐戰術中心\n收費場 半天200/人 全天300/人')               #將回復訊息(replymessage)輸入LINE BOT(message)
+        line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
     elif(count==1):
         counter=0
         while(counter<=10):
