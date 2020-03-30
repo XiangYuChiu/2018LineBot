@@ -32,6 +32,7 @@ def callback():
 ######################################################################
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
+@app.route("/ConfirmTemplate/")
 def handle_message(event):
     if (event.message.text == '123'):   #獲取測試訊息
         replymessage = ('234')          #設定回復訊息(replymessage)
