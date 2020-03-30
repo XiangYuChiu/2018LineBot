@@ -42,6 +42,7 @@ def handle_message(event):
         while(counter<=2):
             if(counter == 1):
                 replymessage = ('各場地資料彙整\n場地地圖 https://goo.gl/dV8xwq\n各場地資料彙整如下\n\n')
+                share_message
             elif(counter == 2):
                 replymessage = ('山湖戰術中心\n官網:  https://www.facebook.com/hillfoxtacticsCenter/\n導航直接搜尋 山狐戰術中心\n收費場 半天200/人 全天300/人')
         #溪湖戰役\n官網:  https://www.facebook.com/XIHUAirsoftWar/\nGoogle 導航溪湖戰役即可\n收費場 入場費平日200/人 假日300/人 \n有販賣飲料/出租裝備\n\n
@@ -53,9 +54,9 @@ def handle_message(event):
         #JEA共同決戰區生存遊戲訓練基地\n網址 https://www.facebook.com/jea.shootingclub/\n地址 苗栗縣後龍鎮龍坑里十班坑172號\n收費場 半天200/人 有提供裝備出借\n\n
         #南投千秋戰場\n網址:  https://www.facebook.com/groups/299470600702193/?fref=nf\n地址;  南投市千秋里菓稟路3號\n收費場 100/人/半天\n\n
             counter += 1
-            message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
-            line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
-        
+            share_message
+            
+def share_message(replymessage):
     message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
     line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
 #######################################################################
