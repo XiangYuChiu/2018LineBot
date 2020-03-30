@@ -40,7 +40,6 @@ def handle_message(event):
     elif(event.message.text == '生存場地'):
         counter = 0
         while(counter<=2):
-            counter += 1
             if(counter == 1):
                 replymessage = ('各場地資料彙整\n場地地圖 https://goo.gl/dV8xwq\n各場地資料彙整如下\n\n')
             elif(counter == 2):
@@ -53,6 +52,7 @@ def handle_message(event):
         #台灣民俗村\n官網: https://www.facebook.com/TFV.gun/\n導航請搜尋”日華大飯店”\n入場費 150/人\n\n
         #JEA共同決戰區生存遊戲訓練基地\n網址 https://www.facebook.com/jea.shootingclub/\n地址 苗栗縣後龍鎮龍坑里十班坑172號\n收費場 半天200/人 有提供裝備出借\n\n
         #南投千秋戰場\n網址:  https://www.facebook.com/groups/299470600702193/?fref=nf\n地址;  南投市千秋里菓稟路3號\n收費場 100/人/半天\n\n
+            counter += 1
         
     message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
     line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
