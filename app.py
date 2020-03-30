@@ -48,7 +48,7 @@ def handle_message(event):
         replymessage = TemplateSendMessage(
             alt_text='Confirm template',
             template=ConfirmTemplate(
-                text='Are you sure?'
+                text='Are you sure?',
                 actions=[
                     PostbackTemplateAction(
                         label='postback',
