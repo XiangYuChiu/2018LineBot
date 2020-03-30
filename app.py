@@ -39,8 +39,8 @@ def handle_message(event):
         replymessage = (' ASUS-RT51U: \n Password: d0645758\n\n dlink-F392:\n Password: 51232960\n\n ASUS_Zenfone3:\n Password: D0645758\n')  
     elif(event.message.text == '生存場地'):
         replymessage = ('各場地資料彙整\n場地地圖 https://goo.gl/dV8xwq\n各場地資料彙整如下\n\n')
-        message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
-        line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
+    message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
+    line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
         replymessage = ('山湖戰術中心\n官網:  https://www.facebook.com/hillfoxtacticsCenter/\n導航直接搜尋 山狐戰術中心\n收費場 半天200/人 全天300/人')
         message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
         line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
