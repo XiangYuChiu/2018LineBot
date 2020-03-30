@@ -38,14 +38,14 @@ def handle_message(event):
     elif(event.message.text == 'Wifi'): 
         replymessage = (' ASUS-RT51U: \n Password: d0645758\n\n dlink-F392:\n Password: 51232960\n\n ASUS_Zenfone3:\n Password: D0645758\n') 
     elif(event.message.text == '生存場地'):
-        count = 1
-    elif(count == 1):
-        counter = 0
+        count=1
+    elif(count==1):
+        counter=0
         while(counter<=10):
-            if(counter == 1):
+            if(counter==1):
                 replymessage = ('各場地資料彙整\n場地地圖 https://goo.gl/dV8xwq\n各場地資料彙整如下\n\n') 
                 break
-            elif(counter == 2):
+            elif(counter==2):
                 replymessage = ('山湖戰術中心\n官網:  https://www.facebook.com/hillfoxtacticsCenter/\n導航直接搜尋 山狐戰術中心\n收費場 半天200/人 全天300/人')
                 break
         #溪湖戰役\n官網:  https://www.facebook.com/XIHUAirsoftWar/\nGoogle 導航溪湖戰役即可\n收費場 入場費平日200/人 假日300/人 \n有販賣飲料/出租裝備\n\n
