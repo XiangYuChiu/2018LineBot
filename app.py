@@ -42,7 +42,7 @@ def handle_message(event):
     elif(event.message.text == '生存地圖'):
         replymessage = ('台中生存遊戲Google Map: https://goo.gl/dV8xwq')
     elif(event.message.text == '槍店'):
-        replymessage = ('KUI 酷愛生存遊戲專賣 - 台中總店\n地址： 406台中市北屯區軍功路一段243-1號\n營業時間:13:00~21:30')
+        replymessage = ('KUI 酷愛生存遊戲專賣 - 台中總店\n地址： 406台中市北屯區軍功路一段243-1號\n營業時間:13:00~21:30\n電話： 04-24376402\n\nKUI 酷愛生存遊戲專賣 - 台中西屯店\n地址： 407台中市西屯區福雅路335號\n營業時間:13:00~21:30\n電話：04-24653131\n\nIDCF艾利斯生存遊戲工作坊台中店\n地址： 407台中市西屯區西屯路二段上石北二巷15號 地下一樓\n營業時間:13:30~22:30\n電話： 04-24522047')
         
     message = TextSendMessage(text=replymessage)               #將回復訊息(replymessage)輸入LINE BOT(message)
     line_bot_api.reply_message(event.reply_token, message)     #LINE BOT回復訊息
