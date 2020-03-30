@@ -45,17 +45,17 @@ def handle_message(event):
         replymessage = ('KUI 酷愛生存遊戲專賣 - 台中總店\n地址： 406台中市北屯區軍功路一段243-1號\n營業時間:13:00~21:30\n電話： 04-24376402\n露天:https://www.ruten.com.tw/user/index00.php?s=paymy168\n\nKUI 酷愛生存遊戲專賣 - 台中西屯店\n地址： 407台中市西屯區福雅路335號\n營業時間:13:00~21:30\n電話：04-24653131\n\nIDCF艾利斯生存遊戲工作坊台中店\n地址： 407台中市西屯區西屯路二段上石北二巷15號 地下一樓\n營業時間:13:30~22:30\n電話： 04-24522047\n露天:https://www.ruten.com.tw/user/index00.php?s=sky19840716\n\n翔準生存遊戲專賣\n地址:508彰化縣和美鎮彰新路二段479號\n營業時間:12:00~22:00\n電話:04-7353481\n官網:https://www.aog.com.tw/\n露天賣場1:https://www.ruten.com.tw/user/index00.php?s=zzzlin8899\n露天賣場2:https://www.ruten.com.tw/user/index00.php?s=and888999\n\nBCS武器空間生存遊戲專賣 台中美村店\n地址:403台中市西區美村路一段109號\n營業時間:13:00~22:00\n電話:04-23269483\n露天:https://www.ruten.com.tw/user/index00.php?s=bcsbcs\n\nBCS武器空間生存遊戲專賣-台中NOVA英才店\n地址:403台中市西區英才路508號2號2樓241櫃位\n營業時間:11:00~21:30\n電話:04-23293192\n\n金和勝玩具-西屯店\n地址:407台中市西屯區西屯路三段79-8號\n營業時間14:00~22:00\n電話:04-24511795\n露天:https://www.ruten.com.tw/user/index00.php?s=a400258\n\n金和勝玩具-彰化店\n地址:500彰化縣彰化市中央路9號\n電話:04-7621300\n\n')
     elif(event.message.text == '推廣'):
         replymessage = TemplateSendMessage(
-            alt_text='推廣的各位大家好\n請問要查詢哪間教室的訊息呢?',
+            alt_text='Confirm template?',
             template=ConfirmTemplate(
                 text='Are you sure?',
                 actions=[
                     PostbackTemplateAction(
-                        label='商502',
+                        label='Confirm template',
                         text='postback text',
-                        data='action=buy&itemid=1'
+                        #data='action=buy&itemid=1'
                     ),
                     MessageTemplateAction(
-                        label='商108',
+                        label='replymessage',
                         text='message text'
                     )
                 ]
