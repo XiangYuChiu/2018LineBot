@@ -64,7 +64,7 @@ def handle_message(event):
         )
         
     
-    message = TextSendMessage(replymessage)              #將回復訊息(replymessage)輸入LINE BOT(message)
+    message = TextSendMessage(text=replymessage)              #將回復訊息(replymessage)輸入LINE BOT(message)
     line_bot_api.reply_message(event.reply_token,message)     #LINE BOT回復訊息
     
 #######################################################################
