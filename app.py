@@ -85,13 +85,11 @@ def handle_message(event):
                     MessageAction(
                         label = '學生機',   # 在按鈕模板上顯示的名稱
                         display_text = '商502學生機',  # 點擊會顯示的文字
-                        text = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # 點擊後，顯示現在的時間，這些都可以隨意修改喔！
                     ),
                     MessageAction(
                         label = '3D列印機',   # 在按鈕模板上顯示的名稱
                         display_text = '3D列印機',  # 點擊會顯示的文字
-                        text = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # 點擊後，顯示現在的時間，這些都可以隨意修改喔！
-                    ),
+                    )
                 ]
             )
         )
