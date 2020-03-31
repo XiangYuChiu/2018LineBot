@@ -7,6 +7,10 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
+import os
+
+ToolManAC = os.environ.get('ToolManAC')
+ToolManPW = os.environ.get('ToolManPW')
 
 app = Flask(__name__)
 
