@@ -52,16 +52,16 @@ def handle_message(event):
         replymessage = TemplateSendMessage(
             alt_text='Confirm template',
             template=ConfirmTemplate(
-                text='Are you sure?',
+                text='推廣的各位大家好\n請問要查哪間教室的資訊呢?',
                 actions=[
                     PostbackTemplateAction(
-                        label='postback',
-                        text='postback text',
+                        label='商108',
+                        text='商108',
                         data='action=buy&itemid=1'
                     ),
                     MessageTemplateAction(
-                        label='message',
-                        text='message text'
+                        label='商502',
+                        text='商502'
                     )
                 ]
             )
