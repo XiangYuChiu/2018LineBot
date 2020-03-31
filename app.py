@@ -78,17 +78,17 @@ def handle_message(event):
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                     PostbackAction(
                         label = '導師機',  # 在按鈕模板上顯示的名稱
-                        display_text = '商502導師機',  # 點擊會顯示的文字
+                        text = '商502導師機',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                     ),
                     # 跟上面差不多
                     MessageAction(
                         label = '學生機',   # 在按鈕模板上顯示的名稱
-                        display_text = '商502學生機',  # 點擊會顯示的文字
+                        text = '商502學生機',  # 點擊會顯示的文字
                     ),
                     MessageAction(
                         label = '3D列印機',   # 在按鈕模板上顯示的名稱
-                        display_text = '3D列印機',  # 點擊會顯示的文字
+                        text = '3D列印機',  # 點擊會顯示的文字
                     )
                 ]
             )
