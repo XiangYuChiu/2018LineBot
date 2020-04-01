@@ -97,7 +97,7 @@ def handle_message(event):
         )
         
     
-    reply_message
+    reply_message_test
     line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
     
     
