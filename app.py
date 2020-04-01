@@ -40,6 +40,8 @@ def callback():
 def handle_message(event):
     if (event.message.text == '123'):   #獲取測試訊息
         replymessage = TextSendMessage(text='234')          #設定回復訊息(replymessage)
+        line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
+        line_bot_api.reply_message(event.reply_token,'22345678')     #LINE BOT回復訊息
     elif(event.message.text == 'Wifi'): 
         replymessage = TextSendMessage(text=' ASUS-RT51U: \n Password: d0645758\n\n dlink-F392:\n Password: 51232960\n\n ASUS_Zenfone3:\n Password: D0645758\n') 
     elif(event.message.text == '生存場地'):
