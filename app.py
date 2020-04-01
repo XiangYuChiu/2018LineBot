@@ -96,9 +96,9 @@ def handle_message(event):
         )
         
     
- 
-    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
     reply_message
+    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
+    
     
 def reply_message(replymessage):
     line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
