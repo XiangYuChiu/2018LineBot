@@ -98,6 +98,8 @@ def handle_message(event):
     
  
     line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
+    reply_message
+    
 def reply_message(replymessage):
     line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
     line_bot_api.reply_message(event.reply_token,'22345678')     #LINE BOT回復訊息
