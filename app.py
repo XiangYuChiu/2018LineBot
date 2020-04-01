@@ -98,15 +98,15 @@ def handle_message(event):
         
     
     reply_message_test
-    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
+    #line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
     
     
 def reply_message_test(replymessage,number):
+    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
     counter = 0
     while(counter<=number):
-        line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
         line_bot_api.reply_message(event.reply_token,'22345678')     #LINE BOT回復訊息
-        counter +=1
+        counter = counter + 1
 #######################################################################
 if __name__ == "__main__":
     app.run()
