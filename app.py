@@ -204,6 +204,8 @@ def handle_message(event):
                 ]
             )
         ))
+    elif(event.message.text == '商502電腦周邊雜物'):
+        reply_arr.append(TextSendMessage(text='物品清點中~') )
     
     line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
 #######################################################################
