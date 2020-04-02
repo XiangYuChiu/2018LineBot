@@ -37,12 +37,11 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 @app.route("/ConfirmTemplate/")
+reply_arr=[]
 def handle_message(event):
     if (event.message.text == '回復多則訊息'):   #獲取測試訊息
-        replymessage = TextSendMessage(text='第一則文字訊息')          #設定回復訊息(replymessage)
-        line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
-        replymessage = TextSendMessage(text='第二則回復訊息')
-        line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
+        reply_arr.append(TextSendMessage(text='第一則文字訊息') )
+        reply_arr.append(TextSendMessage(text='第二則回復訊息') )
     elif(event.message.text == 'Wifi'): 
         replymessage = TextSendMessage(text=' ASUS-RT51U: \n Password: d0645758\n\n dlink-F392:\n Password: 51232960\n\n ASUS_Zenfone3:\n Password: D0645758\n') 
     elif(event.message.text == '生存場地'):
@@ -99,7 +98,7 @@ def handle_message(event):
         
     
     reply_message_test
-    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
+    line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
     line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
     line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
     
