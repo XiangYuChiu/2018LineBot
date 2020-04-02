@@ -125,7 +125,7 @@ def handle_message(event):
                     MessageAction(
                         label = '故障資訊',   # 在按鈕模板上顯示的名稱
                         text = '商502導師機故障資訊',  # 點擊會顯示的文字
-                    )
+                    ),
                     MessageAction(
                         label = '回到推廣首頁',
                         text = '推廣首頁',
