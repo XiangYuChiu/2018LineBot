@@ -69,7 +69,7 @@ def handle_message(event):
             )
         ))
     elif(event.message.text == '商502'):
-        replymessage = TemplateSendMessage(
+        reply_arr.append(TextSendMessage(
             alt_text = '商502查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
                 thumbnail_image_url = 'https://i.imgur.com/6Rj7CIx.jpg',  # 你的按鈕模板的圖片是什麼
@@ -94,7 +94,7 @@ def handle_message(event):
                     )
                 ]
             )
-        )
+        ))
         
     line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
 #######################################################################
