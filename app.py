@@ -39,7 +39,7 @@ def callback():
 @app.route("/ConfirmTemplate/")
 def handle_message(event):
     reply_arr=[]
-    if (event.message.text == '回復多則訊息'):   #獲取測試訊息
+    if (event.message.text == '123'):   #獲取測試訊息
         reply_arr.append(TextSendMessage(text='第一則文字訊息') )
         reply_arr.append(TextSendMessage(text='第二則回復訊息') )
     elif(event.message.text == 'Wifi'): 
@@ -129,6 +129,7 @@ def handle_message(event):
                     MessageAction(
                         label = '回到推廣首頁',
                         text = '推廣首頁',
+                    )
                 ]
             )
         ))
