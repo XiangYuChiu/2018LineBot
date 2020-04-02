@@ -42,6 +42,8 @@ def handle_message(event):
         replymessage = TextSendMessage(text='234')          #設定回復訊息(replymessage)
         number = 4
         reply_message_test
+        replymessage = TextSendMessage(text='567')
+        reply_message_text
     elif(event.message.text == 'Wifi'): 
         replymessage = TextSendMessage(text=' ASUS-RT51U: \n Password: d0645758\n\n dlink-F392:\n Password: 51232960\n\n ASUS_Zenfone3:\n Password: D0645758\n') 
     elif(event.message.text == '生存場地'):
