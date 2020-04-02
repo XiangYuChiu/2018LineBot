@@ -37,8 +37,8 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 @app.route("/ConfirmTemplate/")
-reply_arr=[]
 def handle_message(event):
+    reply_arr=[]
     if (event.message.text == '回復多則訊息'):   #獲取測試訊息
         reply_arr.append(TextSendMessage(text='第一則文字訊息') )
         reply_arr.append(TextSendMessage(text='第二則回復訊息') )
@@ -99,16 +99,6 @@ def handle_message(event):
     
     reply_message_test
     line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
-    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
-    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
-    
-    
-def reply_message_test(replymessage,number):
-    line_bot_api.reply_message(event.reply_token,replymessage)     #LINE BOT回復訊息
-    counter = 0
-    while(counter<=number):
-        line_bot_api.reply_message(event.reply_token,'22345678')     #LINE BOT回復訊息
-        counter = counter + 1
 #######################################################################
 if __name__ == "__main__":
     app.run()
