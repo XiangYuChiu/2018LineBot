@@ -77,6 +77,7 @@ def handle_message(event):
                         label = '商108',   # 在按鈕模板上顯示的名稱
                         text = '108',  # 點擊會顯示的文字
                     )
+                ]
          ))
     
     line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
