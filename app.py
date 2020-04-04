@@ -62,7 +62,7 @@ def handle_message(event):
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
                 thumbnail_image_url = 'https://i.imgur.com/6Rj7CIx.jpg',  # 你的按鈕模板的圖片是什麼
-                title = '推廣的各位大家好\n請問要啥哪間教室的電腦資訊呢?',  # 你的標題名稱
+                title = '(warning)推廣的各位大家好\n請問要啥哪間教室的電腦資訊呢?',  # 你的標題名稱
                 text = '請選擇你要的項目：',  # 應該算是一個副標題
                 # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                 actions = [
