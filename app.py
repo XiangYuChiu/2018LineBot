@@ -212,11 +212,7 @@ def handle_message(event):
             original_content_url='https://i.imgur.com/498bP3T.jpg',
             preview_image_url='https://i.imgur.com/498bP3T.jpg'
         ))
-    #elif(event.message.text == '商502導師機程式項目'):
-        #data = pd.read_excel('https://docs.google.com/spreadsheets/d/1ne5Tc0sdzRMvLTfrRg7oXwatdiVowWwRXyVqCnUmSe8/edit#gid=0', skiprows = 2, sheet_name = None) # "data" are all sheets as a dictionary
-        #xls = pd.ExcelFile('https://docs.google.com/spreadsheets/d/1ne5Tc0sdzRMvLTfrRg7oXwatdiVowWwRXyVqCnUmSe8/edit#gid=0')
-        #xls.sheet_names # see all sheet names
-        #reply_arr.append(TextSendMessage(text=data.get('導師機上課用軟體'))) # get a specific sheet to DataFrame
+
 
     
     line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
