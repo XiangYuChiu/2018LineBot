@@ -8,7 +8,6 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 import os
-import pandas as pd
 
 ToolManAC = os.environ.get('ToolManAC')
 ToolManPW = os.environ.get('ToolManPW')
