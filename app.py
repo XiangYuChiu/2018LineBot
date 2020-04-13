@@ -58,7 +58,7 @@ def handle_message(event):
         reply_arr.append(TextSendMessage(text='BCS武器空間生存遊戲專賣 台中美村店\n地址:403台中市西區美村路一段109號\n營業時間:13:00~22:00\n電話:04-23269483\n露天:https://www.ruten.com.tw/user/index00.php?s=bcsbcs\n\nBCS武器空間生存遊戲專賣-台中NOVA英才店\n地址:403台中市西區英才路508號2號2樓241櫃位\n營業時間:11:00~21:30\n電話:04-23293192\n\n'))
         reply_arr.append(TextSendMessage(text='金和勝玩具-西屯店\n地址:407台中市西屯區西屯路三段79-8號\n營業時間14:00~22:00\n電話:04-24511795\n露天:https://www.ruten.com.tw/user/index00.php?s=a400258\n\n金和勝玩具-彰化店\n地址:500彰化縣彰化市中央路9號\n電話:04-7621300\n\n'))
     elif(event.message.text == '推廣'):
-        reply_arr.append(TextSendMessage(text='⚠目前多項功能還在補強中 請見諒⚠\n') )
+        reply_arr.append(TextSendMessage(text='⚠目前多項功能還在補強中 請見諒⚠') )
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
@@ -206,7 +206,7 @@ def handle_message(event):
             )
         ))
     elif(event.message.text == '商502電腦周邊雜物'):
-        reply_arr.append(TextSendMessage(text='第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒，3D列印機底板用膠帶，電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，硬碟×32，SATA線×3') )
+        reply_arr.append(TextSendMessage(text='第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒\n3D列印機底板用膠帶\n電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，硬碟×32，SATA線×3') )
         reply_arr.append(ImageSendMessage(
             original_content_url='https://i.imgur.com/498bP3T.jpg',
             preview_image_url='https://i.imgur.com/498bP3T.jpg'
