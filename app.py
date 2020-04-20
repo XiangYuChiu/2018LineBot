@@ -206,7 +206,7 @@ def handle_message(event):
             )
         ))
     elif(event.message.text == '商502電腦周邊雜物'):
-        reply_arr.append(TextSendMessage(text='第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒\n3D列印機底板用膠帶\n電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，硬碟×32，SATA線×3') )
+        reply_arr.append(TextSendMessage(text='第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒\n3D列印機底板用膠帶\n電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，舊硬碟×32，') )
         reply_arr.append(ImageSendMessage(
             original_content_url='https://i.imgur.com/498bP3T.jpg',
             preview_image_url='https://i.imgur.com/498bP3T.jpg'
