@@ -211,28 +211,7 @@ def handle_message(event):
             original_content_url='https://i.imgur.com/498bP3T.jpg',
             preview_image_url='https://i.imgur.com/498bP3T.jpg'
         ))
-    elif(event.message.text == '商502導師機程式項目'):
-        function getFormData() {
-        var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQpeGgvU4I0opOwTo67TSEXZZQp17_ym15iCLhMiuoR4K4Q--CaTKTmA9wNrkumPnJuhiLUlLNeHJ6A/pubhtml";
-        var SpreadSheet = SpreadsheetApp.openByUrl(url);
-        var sheet = SpreadSheet.getActiveSheet();
-        if(sheet) {
-            var lastColumn = sheet.getLastColumn();
-            var lastRow = sheet.getLastRow();
-            var sheetData = sheet.getSheetValues(1, 1, lastRow, lastColumn);
-            var message = "\n";
-            for (var i = 1 ; i < lastRow; i++) {
-                for (var j = 1 ; j < lastColumn; j++) {
-                    message += sheetData[0][j] + "：" + sheetData[i][j] + "\n";
-                } 
-                message += "\n"
-            }
-            Logger.log(message)
-            } else {
-            Logger.log("試算表錯誤！");
-            }  
-            }
-        ))
+
 
 
     
