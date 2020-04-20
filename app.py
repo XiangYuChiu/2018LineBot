@@ -8,10 +8,7 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 import os
-import sys
-import datetime
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials as SAC
+
 
 ToolManAC = os.environ.get('ToolManAC')
 ToolManPW = os.environ.get('ToolManPW')
@@ -44,8 +41,7 @@ def callback():
 def handle_message(event):
     reply_arr=[]
     if (event.message.text == '123'):   #獲取測試訊息
-        reply_arr.append(TextSendMessage(text='第一則文字訊息') )
-        reply_arr.append(TextSendMessage(text='第二則回復訊息') )
+
     elif(event.message.text == 'Wifi'): 
         reply_arr.append(TextSendMessage(text='ASUS-RT51U: \nPassword: d0645758\n\ndlink-F392:\nPassword: 51232960\n\nASUS_Zenfone3:\nPassword: D0645758\n'))
     elif(event.message.text == '生存場地'):
