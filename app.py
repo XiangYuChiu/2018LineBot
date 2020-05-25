@@ -90,7 +90,7 @@ def handle_message(event):
                 actions = [
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                     PostbackAction(
-                        label = 'Micosoft Teams 20205月',  # 在按鈕模板上顯示的名稱
+                        label = 'Micosoft Teams 2020.5',  # 在按鈕模板上顯示的名稱
                         text = 'Micosoft Teams',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                     ),
@@ -98,6 +98,14 @@ def handle_message(event):
                     MessageAction(
                          label = '3D列印機說明書 廠商提供',   # 在按鈕模板上顯示的名稱
                         text = '3D列印機說明書',  # 點擊會顯示的文字
+                    )
+                    MessageAction(
+                        label = '還原系統開啟 2019.10',   # 在按鈕模板上顯示的名稱
+                        text = 'CPR還原系統開啟方法',  # 點擊會顯示的文字
+                    ),
+                    MessageAction(
+                        label = '各項軟體版本號',
+                        text = '502各項軟體版本號',
                     )
                 ]
             )
