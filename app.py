@@ -79,6 +79,37 @@ def handle_message(event):
                 ]
             )
          ))
+    elif(event.message.text == '秘笈來也~'):
+        reply_arr.append(TemplateSendMessage(
+            alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
+            template = ButtonsTemplate(
+                thumbnail_image_url = 'https://i.imgur.com/I5wvD3u.jpg',  # 你的按鈕模板的圖片是什麼
+                title = '武功秘笈',  # 你的標題名稱
+                text = '以下是目前的相關檔案：',  # 應該算是一個副標題
+                # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
+                actions = [
+                    # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
+                    PostbackAction(
+                        label = 'Micosoft Teams_2020.5製作',  # 在按鈕模板上顯示的名稱
+                        text = 'Micosoft Teams',  # 點擊會顯示的文字
+                        data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
+                    ),
+                    # 跟上面差不多
+                    MessageAction(
+                        label = '3D列印機說明書_廠商提供',   # 在按鈕模板上顯示的名稱
+                        text = '3D列印機說明書',  # 點擊會顯示的文字
+                    ),
+                    MessageAction(
+                        label = 'CPR還原系統開啟方法_2019.10製作',   # 在按鈕模板上顯示的名稱
+                        text = 'CPR還原系統開啟方法',  # 點擊會顯示的文字
+                    ),
+                    MessageAction(
+                        label = '各項軟體版本號',
+                        text = '502各項軟體版本號',
+                    )
+                ]
+            )
+        ))
     elif(event.message.text == '推廣教室查詢'):
         reply_arr.append(TextSendMessage(text='⚠目前多項功能還在補強中 請見諒⚠') )
         reply_arr.append(TemplateSendMessage(
