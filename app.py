@@ -79,7 +79,7 @@ def handle_message(event):
                 ]
             )
          ))
-    elif(event.message.text == '秘笈來也~'):
+    elif(event.message.text == '秘笈來也~~'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
