@@ -90,8 +90,8 @@ def handle_message(event):
                 actions = [
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                     PostbackAction(
-                         label = 'micosoftteams2020_5製作',  # 在按鈕模板上顯示的名稱
-                        text = 'micosoftteams',  # 點擊會顯示的文字
+                        label = '商502',  # 在按鈕模板上顯示的名稱
+                        text = '商502',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                     ),
                     # 跟上面差不多
@@ -114,8 +114,8 @@ def handle_message(event):
                 actions = [
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                     PostbackAction(
-                        label = '商502',  # 在按鈕模板上顯示的名稱
-                        text = '商502',  # 點擊會顯示的文字
+                        label = 'Micosoft Teams',  # 在按鈕模板上顯示的名稱
+                        text = 'Micosoft Teams',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                     ),
                     # 跟上面差不多
