@@ -96,7 +96,7 @@ def handle_message(event):
                     ),
                     # 跟上面差不多
                     MessageAction(
-                         label = '3D列印機說明書_廠商提供',   # 在按鈕模板上顯示的名稱
+                         label = '3D列印機說明書 廠商提供',   # 在按鈕模板上顯示的名稱
                         text = '3D列印機說明書',  # 點擊會顯示的文字
                     )
                 ]
