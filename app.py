@@ -74,12 +74,12 @@ def handle_message(event):
                     # 跟上面差不多
                     MessageTemplateAction(
                         label = '武功秘笈',   # 在按鈕模板上顯示的名稱
-                        text = '秘笈',  # 點擊會顯示的文字
+                        text = '秘笈來也',  # 點擊會顯示的文字
                     )
                 ]
             )
          ))
-    elif(event.message.text == '秘笈'):
+    elif(event.message.text == '秘笈來也'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
