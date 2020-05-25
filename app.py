@@ -73,7 +73,7 @@ def handle_message(event):
                     )
                 ]
             )
-        )
+        ))
     elif(event.message.text == '推廣教室查詢'):
         reply_arr.append(TextSendMessage(text='⚠目前多項功能還在補強中 請見諒⚠') )
         reply_arr.append(TemplateSendMessage(
