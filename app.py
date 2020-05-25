@@ -110,6 +110,14 @@ def handle_message(event):
                 ]
             )
          ))
+    elif (event.message.text == 'Micosoft Teams'):   
+        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1bkKGSJITAdqZ7fefSEzvdKm9JR6c5BOq'))
+    elif (event.message.text == '3D列印機說明書'):   
+        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1kg_fAj56sAi93o-2PMS6dCjUBqpPU0Ct'))
+    elif (event.message.text == 'CPR還原系統開啟方法'):   
+        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1YytFqzkY6NLzFyxSPUnAByeOpg91_yqj'))
+    elif (event.message.text == '502各項軟體版本號'):   
+        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))
     elif(event.message.text == '推廣教室查詢'):
         reply_arr.append(TextSendMessage(text='⚠目前多項功能還在補強中 請見諒⚠') )
         reply_arr.append(TemplateSendMessage(
