@@ -80,13 +80,12 @@ def handle_message(event):
             )
          ))
     elif(event.message.text == '秘笈來也'):
-        reply_arr.append(TextSendMessage(text='⚠目前多項功能還在補強中 請見諒⚠') )
         reply_arr.append(TemplateSendMessage(
-            alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
+            alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
                 thumbnail_image_url = 'https://i.imgur.com/6Rj7CIx.jpg',  # 你的按鈕模板的圖片是什麼
-                title = '推廣的各位大家好\n請問要啥哪間教室的電腦資訊呢?',  # 你的標題名稱
-                text = '請選擇你要的項目：',  # 應該算是一個副標題
+                title = '武功秘笈',  # 你的標題名稱
+                text = '以下是目前的相關檔案：',  # 應該算是一個副標題
                 # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                 actions = [
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
