@@ -83,7 +83,7 @@ def handle_message(event):
         reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
-                thumbnail_image_url = 'https://i.imgur.com/6Rj7CIx.jpg',  # 你的按鈕模板的圖片是什麼
+                thumbnail_image_url = 'https://i.imgur.com/AwaTv9O.jpg',  # 你的按鈕模板的圖片是什麼
                 title = '武功秘笈',  # 你的標題名稱
                 text = '以下是目前的相關檔案：',  # 應該算是一個副標題
                 # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
