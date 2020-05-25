@@ -62,19 +62,19 @@ def handle_message(event):
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ConfirmTemplate(
-                text = '請選擇你要的項目：',  # 應該算是一個副標題
+                text = '請問要查詢?🤗',  # 應該算是一個副標題
                 # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                 actions = [
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                     PostbackTemplateAction(
-                        label = '商502',  # 在按鈕模板上顯示的名稱
-                        text = '商502',  # 點擊會顯示的文字
+                        label = '教室查詢',  # 在按鈕模板上顯示的名稱
+                        text = '推廣教室查詢',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                     ),
                     # 跟上面差不多
                     MessageTemplateAction(
-                        label = '商108',   # 在按鈕模板上顯示的名稱
-                        text = '108',  # 點擊會顯示的文字
+                        label = '武功秘笈',   # 在按鈕模板上顯示的名稱
+                        text = '秘笈來也~~',  # 點擊會顯示的文字
                     )
                 ]
             )
