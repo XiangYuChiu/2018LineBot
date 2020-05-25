@@ -98,7 +98,7 @@ def handle_message(event):
                     MessageAction(
                          label = '3D列印機說明書 廠商提供',   # 在按鈕模板上顯示的名稱
                         text = '3D列印機說明書',  # 點擊會顯示的文字
-                    )
+                    ),
                     MessageAction(
                         label = '還原系統開啟 2019.10',   # 在按鈕模板上顯示的名稱
                         text = 'CPR還原系統開啟方法',  # 點擊會顯示的文字
