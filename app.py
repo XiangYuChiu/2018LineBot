@@ -122,6 +122,7 @@ def handle_message(event):
                     text = 'SoildWorks檔案路徑',  # 點擊會顯示的文字
                 )
             ]
+            )
          ))
     elif (event.message.text == 'Micosoft Teams'):   
         reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1bkKGSJITAdqZ7fefSEzvdKm9JR6c5BOq'))
