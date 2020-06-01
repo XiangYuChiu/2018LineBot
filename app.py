@@ -108,7 +108,7 @@ def handle_message(event):
                     )
                 ]
             )
-        ))
+        )) 
         reply_arr.append(TemplateSendMessage(
             template = ButtonsTemplate(
             thumbnail_image_url = 'https://i.imgur.com/AwaTv9O.jpg',  # 你的按鈕模板的圖片是什麼
