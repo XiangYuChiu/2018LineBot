@@ -108,8 +108,8 @@ def handle_message(event):
                     )
                 ]
             )
-        ))''', 
-        reply_arr.append(TemplateSendMessage(
+        ))
+        '''reply_arr.append(TemplateSendMessage(
             template = ButtonsTemplate(
             thumbnail_image_url = 'https://i.imgur.com/AwaTv9O.jpg',  # 你的按鈕模板的圖片是什麼
             title = '武功秘笈',  # 你的標題名稱
