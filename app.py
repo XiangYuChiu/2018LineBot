@@ -58,7 +58,10 @@ def handle_message(event):
         reply_arr.append(TextSendMessage(text='翔準生存遊戲專賣\n地址:508彰化縣和美鎮彰新路二段479號\n營業時間:12:00~22:00\n電話:04-7353481\n官網:https://www.aog.com.tw/\n露天賣場1:https://www.ruten.com.tw/user/index00.php?s=zzzlin8899\n露天賣場2:https://www.ruten.com.tw/user/index00.php?s=and888999\n\n'))
         reply_arr.append(TextSendMessage(text='BCS武器空間生存遊戲專賣 台中美村店\n地址:403台中市西區美村路一段109號\n營業時間:13:00~22:00\n電話:04-23269483\n露天:https://www.ruten.com.tw/user/index00.php?s=bcsbcs\n\nBCS武器空間生存遊戲專賣-台中NOVA英才店\n地址:403台中市西區英才路508號2號2樓241櫃位\n營業時間:11:00~21:30\n電話:04-23293192\n\n'))
         reply_arr.append(TextSendMessage(text='金和勝玩具-西屯店\n地址:407台中市西屯區西屯路三段79-8號\n營業時間14:00~22:00\n電話:04-24511795\n露天:https://www.ruten.com.tw/user/index00.php?s=a400258\n\n金和勝玩具-彰化店\n地址:500彰化縣彰化市中央路9號\n電話:04-7621300\n\n'))
+    elif(event.message.text == '更新'): 
+        reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠\n\n2020.6.2:\n502老師機&學生機系統資訊上架'))
     elif(event.message.text == '推廣'):
+        reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠'))
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ConfirmTemplate(
@@ -148,7 +151,6 @@ def handle_message(event):
     elif (event.message.text == 'SoildWorks檔案路徑'):   
         reply_arr.append(TextSendMessage(text='https://drive.google.com/file/d/11fj1KentXp0hpiMkJVtiTd_AQDLfGWME/view?usp=sharing'))
     elif(event.message.text == '推廣教室查詢'):
-        reply_arr.append(TextSendMessage(text='⚠目前多項功能還在補強中 請見諒⚠') )
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
