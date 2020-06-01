@@ -204,6 +204,8 @@ def handle_message(event):
                 ]
             )
         ))
+    elif (event.message.text == '商502導師機系統資訊'):   #獲取測試訊息
+        reply_arr.append(TextSendMessage(text='裝置名稱:b502-teacher \n處理器:lntel Core i7-7700 3.60GHz \n記憶體RAM:16GB \n硬碟:512GB-MX500-SSD+500GB-Hitachi-HDD'))
     elif(event.message.text == '商502學生機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502學生機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
