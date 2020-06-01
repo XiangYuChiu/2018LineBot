@@ -125,6 +125,8 @@ def handle_message(event):
                             )
                         ]
                     )
+                    ]
+                )
          ))
     elif (event.message.text == 'Micosoft Teams'):   
         reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1bkKGSJITAdqZ7fefSEzvdKm9JR6c5BOq'))
