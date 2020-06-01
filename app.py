@@ -91,21 +91,21 @@ def handle_message(event):
                         # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                         actions = [
                             # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
-                            PostbackAction(
+                            PostbackTemplateAction(
                                 label = 'MicosoftTeams 2020.5',  # 在按鈕模板上顯示的名稱
                                 text = 'Micosoft Teams',  # 點擊會顯示的文字
                                 data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                             ),
                             # 跟上面差不多
-                            MessageAction(
+                            MessageTemplateAction(
                                  label = '3D列印機說明書 廠商提供',   # 在按鈕模板上顯示的名稱
                                 text = '3D列印機說明書',  # 點擊會顯示的文字
                             ),
-                            MessageAction(
+                            MessageTemplateAction(
                                 label = '還原系統開啟 2019.10',   # 在按鈕模板上顯示的名稱
                                 text = 'CPR還原系統開啟方法',  # 點擊會顯示的文字
                             ),
-                            MessageAction(
+                            MessageTemplateAction(
                                 label = '各項軟體版本號',
                                 text = '502各項軟體版本號',
                             )
@@ -118,7 +118,7 @@ def handle_message(event):
                         # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                         actions = [
                             # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
-                            PostbackAction(
+                            PostbackTemplateAction(
                                 label = 'SoildWorks檔案路徑',  # 在按鈕模板上顯示的名稱
                                 text = 'SoildWorks檔案路徑',  # 點擊會顯示的文字
                                 data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
