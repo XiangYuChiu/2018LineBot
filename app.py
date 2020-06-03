@@ -124,9 +124,22 @@ def handle_message(event):
                 actions = [
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                     PostbackAction(
-                        abel = 'SoildWorks路徑',   # 在按鈕模板上顯示的名稱
-                        text = 'SoildWorks路徑',  # 點擊會顯示的文字
+                        label = 'MicosoftTeams',  # 在按鈕模板上顯示的名稱
+                        text = 'MicosoftTeams',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
+                    ),
+                    # 跟上面差不多
+                    MessageAction(
+                        label = '還原系統開啟',   # 在按鈕模板上顯示的名稱
+                        text = 'CPR還原系統開啟方法',  # 點擊會顯示的文字
+                    ),
+                    MessageAction(
+                        label = '3D列印機說明書',   # 在按鈕模板上顯示的名稱
+                        text = '3D列印機說明書',  # 點擊會顯示的文字
+                    ),
+                    MessageAction(
+                        label = '各項軟體版本號',  # 在按鈕模板上顯示的名稱
+                        text = '502各項軟體版本號'
                     )
                 ]
             )
