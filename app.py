@@ -83,7 +83,7 @@ def handle_message(event):
             )
          ))
     elif(event.message.text == '秘笈來也'):
-        '''reply_arr.append(TemplateSendMessage(
+        reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template =CarouselTemplate(
                 columns=[
@@ -128,8 +128,8 @@ def handle_message(event):
                     )
                 ]
             )
-        ))'''
-        reply_arr.append(TemplateSendMessage(
+        ))
+        '''reply_arr.append(TemplateSendMessage(
             template = ButtonsTemplate(
             thumbnail_image_url = 'https://i.imgur.com/AwaTv9O.jpg',  # 你的按鈕模板的圖片是什麼
             title = '武功秘笈',  # 你的標題名稱
@@ -143,7 +143,7 @@ def handle_message(event):
                 )
             ]
             )
-         ))
+         ))'''
     elif (event.message.text == 'Micosoft Teams'):   
         reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1bkKGSJITAdqZ7fefSEzvdKm9JR6c5BOq'))
     elif (event.message.text == '3D列印機說明書'):   
