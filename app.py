@@ -62,7 +62,7 @@ def handle_message(event):
         reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠\n\n2020.6.2:\n502老師機&學生機系統資訊上架'))
     elif(event.message.text == '推廣'):
         reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠'))
-        '''reply_arr.append(TemplateSendMessage(
+        reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ConfirmTemplate(
                 text = '請問要查詢?🤗',  # 應該算是一個副標題
@@ -83,7 +83,8 @@ def handle_message(event):
             )
          ))
     elif(event.message.text == '秘笈來也'):
-        reply_arr.append(TemplateSendMessage(
+        reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠'))
+        '''reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template =CarouselTemplate(
                 columns=[
