@@ -128,8 +128,8 @@ def handle_message(event):
                         text = 'SoildWorks檔案路徑',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                     )#,
-                    '''# 跟上面差不多
-                    MessageAction(
+                    # 跟上面差不多
+                    '''MessageAction(
                         label = '還原系統開啟',   # 在按鈕模板上顯示的名稱
                         text = 'CPR還原系統開啟方法',  # 點擊會顯示的文字
                     ),
