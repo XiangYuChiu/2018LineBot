@@ -62,7 +62,7 @@ def handle_message(event):
         reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠\n\n2020.6.2:\n502老師機&學生機系統資訊上架'))
     elif(event.message.text == '推廣'):
         reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠'))
-        reply_arr.append(TemplateSendMessage(
+        '''reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ConfirmTemplate(
                 text = '請問要查詢?🤗',  # 應該算是一個副標題
@@ -114,22 +114,22 @@ def handle_message(event):
                         actions = [# 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                             PostbackTemplateAction(
                                 label = '各項軟體版本號',
-                                text = '502各項軟體版本號',
+                                text = '502各項軟體版本號'
                             ),
                             MessageTemplateAction(
                                 label = 'SoildWorks檔案路徑',  # 在按鈕模板上顯示的名稱
-                                text = 'SoildWorks檔案路徑',  # 點擊會顯示的文字
+                                text = 'SoildWorks檔案路徑'  # 點擊會顯示的文字
                             ),
                             MessageTemplateAction(
                                 label = 'SoildWorks檔案路徑',  # 在按鈕模板上顯示的名稱
-                                text = 'SoildWorks檔案路徑',  # 點擊會顯示的文字
+                                text = 'SoildWorks檔案路徑'  # 點擊會顯示的文字
                             )
                         ]
                     )
                 ]
             )
         ))
-        '''reply_arr.append(TemplateSendMessage(
+        reply_arr.append(TemplateSendMessage(
             template = ButtonsTemplate(
             thumbnail_image_url = 'https://i.imgur.com/AwaTv9O.jpg',  # 你的按鈕模板的圖片是什麼
             title = '武功秘笈',  # 你的標題名稱
