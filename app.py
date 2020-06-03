@@ -92,7 +92,7 @@ def handle_message(event):
                         title = '武功秘笈',  # 你的標題名稱
                         text = '以下是目前的相關檔案：',  # 應該算是一個副標題# 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                         actions = [# 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
-                            MessageTemplateAction(
+                            PostbackTemplateAction(
                                 label = 'MicosoftTeams 2020.5',  # 在按鈕模板上顯示的名稱
                                 text = 'Micosoft Teams',  # 點擊會顯示的文字
                             ),
@@ -112,9 +112,13 @@ def handle_message(event):
                         title = '武功秘笈',  # 你的標題名稱
                         text = '以下是目前的相關檔案：',  # 應該算是一個副標題# 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                         actions = [# 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
-                            MessageTemplateAction(
+                            PostbackTemplateAction(
                                 label = '各項軟體版本號',
                                 text = '502各項軟體版本號',
+                            ),
+                            MessageTemplateAction(
+                                label = 'SoildWorks檔案路徑',  # 在按鈕模板上顯示的名稱
+                                text = 'SoildWorks檔案路徑',  # 點擊會顯示的文字
                             ),
                             MessageTemplateAction(
                                 label = 'SoildWorks檔案路徑',  # 在按鈕模板上顯示的名稱
@@ -122,9 +126,9 @@ def handle_message(event):
                             )
                         ]
                     )
-                    ]
-                    )
-                ))
+                ]
+            )
+        ))
         '''reply_arr.append(TemplateSendMessage(
             template = ButtonsTemplate(
             thumbnail_image_url = 'https://i.imgur.com/AwaTv9O.jpg',  # 你的按鈕模板的圖片是什麼
