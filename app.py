@@ -59,9 +59,8 @@ def handle_message(event):
         reply_arr.append(TextSendMessage(text='BCS武器空間生存遊戲專賣 台中美村店\n地址:403台中市西區美村路一段109號\n營業時間:13:00~22:00\n電話:04-23269483\n露天:https://www.ruten.com.tw/user/index00.php?s=bcsbcs\n\nBCS武器空間生存遊戲專賣-台中NOVA英才店\n地址:403台中市西區英才路508號2號2樓241櫃位\n營業時間:11:00~21:30\n電話:04-23293192\n\n'))
         reply_arr.append(TextSendMessage(text='金和勝玩具-西屯店\n地址:407台中市西屯區西屯路三段79-8號\n營業時間14:00~22:00\n電話:04-24511795\n露天:https://www.ruten.com.tw/user/index00.php?s=a400258\n\n金和勝玩具-彰化店\n地址:500彰化縣彰化市中央路9號\n電話:04-7621300\n\n'))
     elif(event.message.text == '更新'): 
-        reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠\n\n2020.6.2:\n502老師機&學生機系統資訊上架'))
+        reply_arr.append(TextSendMessage(text='2020.6.3:\n武功秘笈重新上線完成\n系統資訊完整化\n\n2020.6.2:\n502老師機&學生機系統資訊上架'))
     elif(event.message.text == '推廣'):
-        reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠'))
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ConfirmTemplate(
@@ -83,7 +82,6 @@ def handle_message(event):
             )
          ))
     elif(event.message.text == '秘笈來也'):
-        reply_arr.append(TextSendMessage(text='⚠目前"武功秘笈"選項維修中無法使用(2020.6.2維護中)⚠'))
         reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
@@ -240,7 +238,7 @@ def handle_message(event):
             )
         ))
     elif(event.message.text == '商502導師機系統資訊'):   #獲取測試訊息
-        reply_arr.append(TextSendMessage(text='裝置名稱:b502-teacher \n\n處理器:\nlntel Core i7-7700 3.60GHz \n\n記憶體RAM:\n16GB \n\n硬碟:512GB-MX500-SSD+500GB-Hitachi-HDD \n\n視訊鏡頭:\n羅技C925e HD網路攝影機 \n\n繪圖螢幕:\nHuion Kamvas PRO13繪圖螢幕'))
+        reply_arr.append(TextSendMessage(text='裝置名稱:b502-teacher \n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-7700 3.60GHz \n\n記憶體RAM:\n16GB \n\n硬碟:512GB-MX500-SSD+500GB-Hitachi-HDD \n\n視訊鏡頭:\n羅技C925e HD網路攝影機 \n\n繪圖螢幕:\nHuion Kamvas PRO13繪圖螢幕'))
     elif(event.message.text == '商502學生機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502學生機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -273,7 +271,7 @@ def handle_message(event):
             )
         )) 
     elif(event.message.text == '商502學生機系統資訊'):   #獲取測試訊息
-            reply_arr.append(TextSendMessage(text='裝置名稱:b502-3-2 \n\n處理器:\nlntel Core i7-3770 3.40GHz \n\n記憶體RAM:\n8GB \n\n硬碟:512GB-MX500-SSD'))    
+            reply_arr.append(TextSendMessage(text='裝置名稱:b502-3-2 \n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-3770 3.40GHz \n\n記憶體RAM:\n8GB \n\n硬碟:512GB-MX500-SSD'))    
     elif(event.message.text == '3D列印機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '3D列印機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
