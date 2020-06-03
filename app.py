@@ -114,7 +114,7 @@ def handle_message(event):
                 ]
             )
         ))
-        '''reply_arr.append(TemplateSendMessage(
+        reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
                 thumbnail_image_url = 'https://i.imgur.com/AwaTv9O.jpg',  # 你的按鈕模板的圖片是什麼
@@ -124,14 +124,14 @@ def handle_message(event):
                 actions = [
                     # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
                     PostbackAction(
-                        abel = 'SoildWorks 檔案路徑',   # 在按鈕模板上顯示的名稱
-                        text = 'SoildWorks 檔案路徑',  # 點擊會顯示的文字
+                        abel = 'SoildWorks檔案路徑',   # 在按鈕模板上顯示的名稱
+                        text = 'SoildWorks檔案路徑',  # 點擊會顯示的文字
                         data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
                     )
                 ]
             )
         ))
-        reply_arr.append(TemplateSendMessage(
+        '''reply_arr.append(TemplateSendMessage(
             alt_text = '秘笈來也(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template =CarouselTemplate(
                 columns=[
