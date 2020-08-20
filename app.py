@@ -156,8 +156,6 @@ def handle_message(event):
     elif (event.message.text == 'Office安裝教學'):
         reply_arr.append(TextSendMessage(text='教學文件/https://drive.google.com/file/d/15mWq6paLzIW8YrOhqJB_T19XNIeyivyC/view?usp=sharing'))
         reply_arr.append(TextSendMessage(text='程式下載(點連結後請與祥育聯絡開通權限)/https://drive.google.com/file/d/1vZ0l7Nclk9G0RYKlh6ZFr4vYf4mXnFRX/view?usp=sharing'))
-    
-    
     elif(event.message.text == '推廣教室查詢'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -181,8 +179,6 @@ def handle_message(event):
                 ]
             )
          ))
-    
-    
     elif(event.message.text == '商502'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -214,8 +210,6 @@ def handle_message(event):
                 ]
             )
         ))
-    
-    
     elif(event.message.text == '商502導師機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502導師機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -251,8 +245,6 @@ def handle_message(event):
         reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))    
     elif(event.message.text == '商502導師機系統資訊'):   #獲取測試訊息
         reply_arr.append(TextSendMessage(text='裝置名稱:b502-teacher \n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-7700 3.60GHz \n\n記憶體RAM:\n16GB \n\n硬碟:512GB-MX500-SSD+500GB-Hitachi-HDD \n\n視訊鏡頭:\n羅技C925e HD網路攝影機 \n\n繪圖螢幕:\nHuion Kamvas PRO13繪圖螢幕'))
-    
-    
     elif(event.message.text == '商502學生機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502學生機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -296,8 +288,6 @@ def handle_message(event):
             original_content_url='https://i.imgur.com/498bP3T.jpg',
             preview_image_url='https://i.imgur.com/498bP3T.jpg'
         ))
-        
-        
     elif(event.message.text == '3D列印機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '3D列印機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -329,8 +319,6 @@ def handle_message(event):
                 ]
             )
         ))
-        
-        
        elif(event.message.text == '商108'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商108查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -367,9 +355,7 @@ def handle_message(event):
     elif(event.message.text == '商108系統資訊'):
         reply_arr.append(TextSendMessage(text='裝置名稱:商108(b502-4-1)\n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-3770 3.40GHz \n\n記憶體RAM:\n8GB \n\n硬碟:512GB-MX500-SSD'))
     elif(event.message.text == '商108故障資訊'):
-            reply_arr.append(TextSendMessage(text='無'))
-
-    
+        reply_arr.append(TextSendMessage(text='無'))
     line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
 #######################################################################
 if __name__ == "__main__":
