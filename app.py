@@ -156,6 +156,8 @@ def handle_message(event):
     elif (event.message.text == 'Office安裝教學'):
         reply_arr.append(TextSendMessage(text='教學文件/https://drive.google.com/file/d/15mWq6paLzIW8YrOhqJB_T19XNIeyivyC/view?usp=sharing'))
         reply_arr.append(TextSendMessage(text='程式下載(點連結後請與祥育聯絡開通權限)/https://drive.google.com/file/d/1vZ0l7Nclk9G0RYKlh6ZFr4vYf4mXnFRX/view?usp=sharing'))
+    
+    
     elif(event.message.text == '推廣教室查詢'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -174,11 +176,13 @@ def handle_message(event):
                     # 跟上面差不多
                     MessageAction(
                         label = '商108',   # 在按鈕模板上顯示的名稱
-                        text = '108',  # 點擊會顯示的文字
+                        text = '商108',  # 點擊會顯示的文字
                     )
                 ]
             )
          ))
+    
+    
     elif(event.message.text == '商502'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -210,6 +214,8 @@ def handle_message(event):
                 ]
             )
         ))
+    
+    
     elif(event.message.text == '商502導師機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502導師機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -241,8 +247,12 @@ def handle_message(event):
                 ]
             )
         ))
+    elif(event.message.text == '商502導師機程式項目'):   #獲取測試訊息
+        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))    
     elif(event.message.text == '商502導師機系統資訊'):   #獲取測試訊息
         reply_arr.append(TextSendMessage(text='裝置名稱:b502-teacher \n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-7700 3.60GHz \n\n記憶體RAM:\n16GB \n\n硬碟:512GB-MX500-SSD+500GB-Hitachi-HDD \n\n視訊鏡頭:\n羅技C925e HD網路攝影機 \n\n繪圖螢幕:\nHuion Kamvas PRO13繪圖螢幕'))
+    
+    
     elif(event.message.text == '商502學生機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '商502學生機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -274,16 +284,26 @@ def handle_message(event):
                 ]
             )
         )) 
+    elif(event.message.text == '商502學生機程式項目'):   #獲取測試訊息
+        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))
     elif(event.message.text == '商502學生機系統資訊'):   #獲取測試訊息
             reply_arr.append(TextSendMessage(text='裝置名稱:b502-3-2 \n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-3770 3.40GHz \n\n記憶體RAM:\n8GB \n\n硬碟:512GB-MX500-SSD'))    
     elif(event.message.text == '商502學生機故障資訊'):
             reply_arr.append(TextSendMessage(text='彙整中'))
+    elif(event.message.text == '商502電腦周邊備品'):
+        reply_arr.append(TextSendMessage(text='2020.6整理\n第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒\n3D列印機底板用膠帶\n電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，舊硬碟×32，') )
+        reply_arr.append(ImageSendMessage(
+            original_content_url='https://i.imgur.com/498bP3T.jpg',
+            preview_image_url='https://i.imgur.com/498bP3T.jpg'
+        ))
+        
+        
     elif(event.message.text == '3D列印機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '3D列印機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
             template = ButtonsTemplate(
                 thumbnail_image_url = 'https://i.imgur.com/0QBHMrg.jpg',  # 你的按鈕模板的圖片是什麼
-                title = '3D列印機查詢',  # 你的標題名稱
+                title = '3D列印機目前均在推廣辦公室內',  # 你的標題名稱
                 text = '請選擇你要的項目：',  # 應該算是一個副標題
                 # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
                 actions = [
@@ -309,14 +329,45 @@ def handle_message(event):
                 ]
             )
         ))
-    elif(event.message.text == '商502電腦周邊備品'):
-        reply_arr.append(TextSendMessage(text='2020.6整理\n第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒\n3D列印機底板用膠帶\n電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，舊硬碟×32，') )
-        reply_arr.append(ImageSendMessage(
-            original_content_url='https://i.imgur.com/498bP3T.jpg',
-            preview_image_url='https://i.imgur.com/498bP3T.jpg'
-        ))
-
-
+        
+        
+       elif(event.message.text == '商108'):
+        reply_arr.append(TemplateSendMessage(
+            alt_text = '商108查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
+            template = ButtonsTemplate(
+                thumbnail_image_url = 'https://i.imgur.com/lh0w50B.jpg',  # 你的按鈕模板的圖片是什麼
+                title = '商108查詢',  # 你的標題名稱
+                text = '請選擇你要的項目：',  # 應該算是一個副標題
+                # 下面主要就是你希望使用者點擊了按鈕會有哪些動作，最多只能有四個action！超過會報錯喔！
+                actions = [
+                    # 說真的這個我不知道要幹嘛用，可能後台可以收數據？我點了就回應我 postback text，至於data我就不熟了
+                    PostbackAction(
+                        label = '程式項目',  # 在按鈕模板上顯示的名稱
+                        text = '商108程式項目',  # 點擊會顯示的文字
+                        data = 'action=buy&itemid=1'  # 這個...我真的就不知道了～
+                    ),
+                    # 跟上面差不多
+                    MessageAction(
+                        label = '系統資訊',   # 在按鈕模板上顯示的名稱
+                        text = '商108系統資訊',  # 點擊會顯示的文字
+                    ),
+                    MessageAction(
+                        label = '故障資訊',   # 在按鈕模板上顯示的名稱
+                        text = '商108故障資訊',  # 點擊會顯示的文字
+                    ),
+                    MessageAction(
+                        label = '回到推廣首頁',
+                        text = '推廣',
+                    )
+                ]
+            )
+        )) 
+    elif(event.message.text == '商108程式項目'):   #獲取測試訊息
+        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))
+    elif(event.message.text == '商108系統資訊'):
+        reply_arr.append(TextSendMessage(text='裝置名稱:商108(b502-4-1)\n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-3770 3.40GHz \n\n記憶體RAM:\n8GB \n\n硬碟:512GB-MX500-SSD'))
+    elif(event.message.text == '商108故障資訊'):
+            reply_arr.append(TextSendMessage(text='無'))
 
     
     line_bot_api.reply_message(event.reply_token,reply_arr)     #LINE BOT回復訊息
