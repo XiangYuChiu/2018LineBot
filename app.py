@@ -151,7 +151,7 @@ def handle_message(event):
     elif (event.message.text == '502各項軟體版本號'):   
         reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))
     elif (event.message.text == 'SoildWorks檔案路徑'):   
-        reply_arr.append(TextSendMessage(text='https://drive.google.com/file/d/11fj1KentXp0hpiMkJVtiTd_AQDLfGWME/view?usp=sharing'))
+        reply_arr.append(TextSendMessage(text='SoildWorks檔案路徑/https://drive.google.com/file/d/11fj1KentXp0hpiMkJVtiTd_AQDLfGWME/view?usp=sharing'))
     elif(event.message.text == '推廣教室查詢'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
