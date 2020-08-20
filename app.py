@@ -99,7 +99,7 @@ def handle_message(event):
                     # 跟上面差不多
                     MessageAction(
                         label = '還原系統開啟',   # 在按鈕模板上顯示的名稱
-                        text = 'CPR還原系統開啟方法',  # 點擊會顯示的文字
+                        text = '502/806還原系統開啟方法',  # 點擊會顯示的文字
                     ),
                     MessageAction(
                         label = '3D列印機說明書',   # 在按鈕模板上顯示的名稱
@@ -128,8 +128,8 @@ def handle_message(event):
                     ),
                     # 跟上面差不多
                     MessageAction(
-                        label = '💻',   # 在按鈕模板上顯示的名稱
-                        text = '推廣',  # 點擊會顯示的文字
+                        label = 'Office安裝教學',   # 在按鈕模板上顯示的名稱
+                        text = 'Office安裝教學',  # 點擊會顯示的文字
                     ),
                     MessageAction(
                         label = '⌨️',   # 在按鈕模板上顯示的名稱
@@ -143,16 +143,19 @@ def handle_message(event):
             )
         ))
     elif (event.message.text == 'Micosoft Teams'):   
-        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1bkKGSJITAdqZ7fefSEzvdKm9JR6c5BOq'))
+        reply_arr.append(TextSendMessage(text='教學文件/https://drive.google.com/open?id=1bkKGSJITAdqZ7fefSEzvdKm9JR6c5BOq'))
     elif (event.message.text == '3D列印機說明書'):   
-        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1kg_fAj56sAi93o-2PMS6dCjUBqpPU0Ct'))
-    elif (event.message.text == 'CPR還原系統開啟方法'):   
-        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1YytFqzkY6NLzFyxSPUnAByeOpg91_yqj'))
+        reply_arr.append(TextSendMessage(text='說明書/https://drive.google.com/open?id=1kg_fAj56sAi93o-2PMS6dCjUBqpPU0Ct'))
+    elif (event.message.text == '502還原系統開啟方法'):   
+        reply_arr.append(TextSendMessage(text='還原系統(CPR)開啟方法/https://drive.google.com/open?id=1YytFqzkY6NLzFyxSPUnAByeOpg91_yqj'))
     elif (event.message.text == '502各項軟體版本號'):   
-        reply_arr.append(TextSendMessage(text='https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))
+        reply_arr.append(TextSendMessage(text='502各項軟體版本號/https://drive.google.com/open?id=1xsj35In6jvebwLy0A7W0hBtXaMFQ0_zZ'))
     elif (event.message.text == 'SoildWorks檔案路徑'):   
-        reply_arr.append(TextSendMessage(text='SoildWorks2016官方版檔案路徑https://drive.google.com/file/d/11fj1KentXp0hpiMkJVtiTd_AQDLfGWME/view?usp=sharing'))
-        reply_arr.append(TextSendMessage(text='SoildWorks2014破解版檔案路徑https://drive.google.com/file/d/1Z3nYt3EGE6pKfS_XLsjswPVLDnlQAnvI/view?usp=sharing'))
+        reply_arr.append(TextSendMessage(text='SoildWorks2016官方版檔案路徑/https://drive.google.com/file/d/11fj1KentXp0hpiMkJVtiTd_AQDLfGWME/view?usp=sharing'))
+        reply_arr.append(TextSendMessage(text='SoildWorks2014破解版檔案路徑/https://drive.google.com/file/d/1Z3nYt3EGE6pKfS_XLsjswPVLDnlQAnvI/view?usp=sharing'))
+    elif (event.message.text == 'Office安裝教學'):
+        reply_arr.append(TextSendMessage(text='教學文件/https://drive.google.com/file/d/15mWq6paLzIW8YrOhqJB_T19XNIeyivyC/view?usp=sharing'))
+        reply_arr.append(TextSendMessage(text='程式下載(點連結後請與祥育聯絡開通權限)/https://drive.google.com/file/d/1vZ0l7Nclk9G0RYKlh6ZFr4vYf4mXnFRX/view?usp=sharing'))
     elif(event.message.text == '推廣教室查詢'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '推廣查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
