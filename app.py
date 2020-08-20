@@ -204,8 +204,8 @@ def handle_message(event):
                         text = '3D列印機',  # 點擊會顯示的文字
                     ),
                     MessageAction(
-                        label = '雜物',
-                        text = '商502電腦周邊雜物',
+                        label = '備品',
+                        text = '商502電腦周邊備品',
                     )
                 ]
             )
@@ -276,6 +276,8 @@ def handle_message(event):
         )) 
     elif(event.message.text == '商502學生機系統資訊'):   #獲取測試訊息
             reply_arr.append(TextSendMessage(text='裝置名稱:b502-3-2 \n\n作業系統:Win10專業版1909-836\n\n處理器:\nlntel Core i7-3770 3.40GHz \n\n記憶體RAM:\n8GB \n\n硬碟:512GB-MX500-SSD'))    
+    elif(event.message.text == '商502學生機故障資訊'):
+            reply_arr.append(TextSendMessage(text='彙整中'))
     elif(event.message.text == '3D列印機'):
         reply_arr.append(TemplateSendMessage(
             alt_text = '3D列印機查詢(請用手機操作)',  # 當你發送到你的Line bot 群組的時候，通知的名稱
@@ -307,8 +309,8 @@ def handle_message(event):
                 ]
             )
         ))
-    elif(event.message.text == '商502電腦周邊雜物'):
-        reply_arr.append(TextSendMessage(text='第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒\n3D列印機底板用膠帶\n電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，舊硬碟×32，') )
+    elif(event.message.text == '商502電腦周邊備品'):
+        reply_arr.append(TextSendMessage(text='2020.6整理\n第一層\n影印紙，廢紙，資料夾\n\n第二層\n3D列印機工具盒\n3D列印機底板用膠帶\n電源供應線×5\n滑鼠×2，記憶卡×1，讀卡機×2\n\n第三層\n延長線×3，舊硬碟×32，') )
         reply_arr.append(ImageSendMessage(
             original_content_url='https://i.imgur.com/498bP3T.jpg',
             preview_image_url='https://i.imgur.com/498bP3T.jpg'
